@@ -3,6 +3,6 @@ class Player
   def initialize(name, buy_in)
     @username = name
     @stack = buy_in
-    @hand
+    @hand = []
   end
 end

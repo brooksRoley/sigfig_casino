@@ -3,30 +3,37 @@ require './player'
 
 class Game
   attr_reader :deck, :players
-  def initialize()
+  def initialize
     @deck = Deck.new()
     @players = [ Player.new("Dealer", 1000000) ]
     @hand_size = 1
   end
 
-  def add_player(username)
+  def add_player(username, buyin)
     if @player.length < 10
-      @players << []
+      @players << Player.new(username, buyin)
     end
   end
 
-  def deal()
+  def deal
     @hand_size.times do
       @players.each_with_index do |player, i|
-        @players[i] << @deck.pop
+        @players[i].hand << @deck.pop
       end
     end
+  end
+
+  def shuffle
+    @players.each do |player|
+      player.hand = []
+    end
+    @deck = Deck.new()
   end
 
 end
 
 class Blackjack < Game
-  def initialize()
+  def initialize
     super
     @hand_size = 2
   end
@@ -58,7 +65,7 @@ class Blackjack < Game
 end
 
 class Texasholdem < Game
-  def initialize()
+  def initialize
     super
     @hand_size = 2
     @blinds_index

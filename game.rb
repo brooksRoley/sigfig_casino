@@ -1,13 +1,15 @@
 require './deck'
+require './player'
 
 class Game
+  attr_reader :deck, :players
   def initialize()
-    @deck = Casino::Deck.new()
-    @players = [[]]
+    @deck = Deck.new()
+    @players = [ Player.new("Dealer", 1000000) ]
     @hand_size = 1
   end
 
-  def add_player()
+  def add_player(username)
     if @player.length < 10
       @players << []
     end
@@ -20,6 +22,7 @@ class Game
       end
     end
   end
+
 end
 
 class Blackjack < Game
@@ -28,20 +31,64 @@ class Blackjack < Game
     @hand_size = 2
   end
 
+  def bet
+  end
+
+  def split
+  end
+
+  def double_down
+  end
+
   def hit
   end
 
   def stand
   end
 
-  def status()
+  def status
   end
 
-  def determine_winner()
+  def determine_winnings
+  end
+
+  def help
   end
 
 end
 
-# class Texasholdem < Game
+class Texasholdem < Game
+  def initialize()
+    super
+    @hand_size = 2
+    @blinds_index
+  end
 
-# end
+  def blinds
+  end
+
+  def check
+  end
+
+  def call
+  end
+
+  def raise
+  end
+
+  def flop
+  end
+
+  def river
+  end
+
+  def turn
+  end
+
+  def determine_winnings
+  end
+
+  def help
+  end
+
+end

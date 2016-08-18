@@ -13,6 +13,7 @@ function handleDragOver(e) {
   }
 
   e.dataTransfer.dropEffect = 'move';  // See the section on the DataTransfer object.
+
   return false;
 }
 
@@ -29,6 +30,7 @@ function handleDrop(e) {
     //Sets new element to dragged data.
     this.innerHTML = e.dataTransfer.getData('text/html');
   }
+
   return false;
 }
 

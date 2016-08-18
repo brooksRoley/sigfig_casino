@@ -19,5 +19,9 @@ Here are the requirements:
 • The images should be reorder-able by dragging and dropping.
 • Any other functionality is not expected.
 • The submitted code should be runnable and viewable.Add any instructions necessary to a README.md file.
-
 You are provided with a directory of sample pictures for convenience.
+
+I would also like to thank MDN and this blog post
+https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API
+http://www.html5rocks.com/en/tutorials/dnd/basics/
+for teaching me the basics of getting drag and drop to work in HTML5.

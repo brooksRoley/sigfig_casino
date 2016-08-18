@@ -3,7 +3,7 @@
 You are working for a company that is building various card games (e.g. Blackjack, Poker) for an online casino. Design the set of classes and interfaces that you would need to implement the functionality of a generic card game, including method signatures and member variables. Please state any assumptions you are making.
 You do not need to create any concrete game implementations.
 
-#Assumptions:
+##Assumptions:
 
 -I am assuming that each of these games will play at a table with a maximum of 10 players including the dealer.
 
@@ -32,3 +32,7 @@ Here are the requirements:
 • The submitted code should be runnable and viewable.Add any instructions necessary to a README.md file.
 
 You are provided with a directory of sample pictures for convenience.
+
+##To Run
+
+Just clone or fork the repo and open the html in a browser. The image files, css, and javascript files are all stored and linked locally so they will be required to view the intended result. Ideally, these would all be stored on the server and I would not track large files such as images in git but this is a simplified example.

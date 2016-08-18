@@ -19,6 +19,7 @@ You do not need to create any concrete game implementations.
 Create a webpage that displays a gallery of images, given a JSON array containing a list of image URLs.
 
 Here are the requirements:
+
 • Do not use any Javascript libraries or frameworks for your webpage. Javascript build tools are ok.
 
 • ES5 or above is preferred.
